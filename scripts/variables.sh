@@ -14,6 +14,11 @@ default_save_complete_history_key="M-P" # Alt-Shift-p
 save_complete_history_key=$(tmux show-option -gqv "@save-complete-history-key")
 save_complete_history_key=${save_complete_history_key:-$default_save_complete_history_key}
 
+# Work with programmable-SplitKeyboard twokey-click feature
+default_save_complete_history_key2="C-p" # Ctrl-p
+save_complete_history_key2=$(tmux show-option -gqv "@save-complete-history-key2")
+save_complete_history_key2=${save_complete_history_key2:-$default_save_complete_history_key2}
+
 default_clear_history_key="M-c" # Alt-c
 clear_history_key=$(tmux show-option -gqv "@clear-history-key")
 clear_history_key=${clear_history_key:-$default_clear_history_key}
